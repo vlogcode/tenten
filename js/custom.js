@@ -165,8 +165,54 @@ jQuery( document ).ready(function($) {
 		jQuery('.kt-slil-index').slick({
 			slidesToShow: 1	,
 			slidesToScroll: 1,
-			// autoplay: true,
+			autoplay: true,
 			autoplaySpeed: 2000,
+			vertical: true,
+		});
+	}
+	if(jQuery('.kt-slil-index_2').length>0){
+		jQuery('.kt-slil-index_2').slick({
+			slidesToShow: 1	,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			vertical: true,
+		});
+	}
+	if(jQuery('.kt-slide-comment').length>0){
+		jQuery('.kt-slide-comment').slick({
+			dots: true,
+			arrows:false,
+			infinite: false,
+			speed: 300,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplaySpeed: 1500,
+			autoplay: true,
+			responsive: [
+				{
+					breakpoint: 1367,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true
+					}
+				},
+				{
+					breakpoint: 769,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
 		});
 	}
 
